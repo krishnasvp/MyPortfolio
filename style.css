@@ -143,7 +143,13 @@ header .footer p a{
 /* Mobile View */
 @media only screen and (max-width: 1050px){
     header{
-        
+        left: -300px;
+    }
+    header .footer{
+        left: -300px;
+    }
+    #MenuBtn{
+        display: block;
     }
 }
 
