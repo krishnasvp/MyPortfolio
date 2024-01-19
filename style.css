@@ -183,6 +183,7 @@ main{
     height: 100vh;
     width: 100%;
     background-image: url(images/my-portfolio-bg.jpg);
+    /*filter: blur(8px);*/
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -217,4 +218,14 @@ main{
 
 #home .home-row h1 span{
     color: var(--themeColor);
+}
+
+#home .home-row p{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#home .home-row p span{
+    border-bottom: 4px solid var(--themeColor);
 }
