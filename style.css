@@ -274,7 +274,7 @@ main{
     border-radius: 3px;
 }
 
-#about .divider ~ p{
+#about .sub-para{
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.4px;
