@@ -288,21 +288,21 @@ main{
     margin-top: 25px;
 }
 
-#about .about-col .img-col{
+#about .img-col{
     flex-basis: 35%;
     text-align: center;
 }
 
-#about .about-col .img-col img{
+#about .img-col img{
     width: 150px;
     border-radius: 10px;
 }
 
-#about .about-col .info-col{
+#about .info-col{
     flex-basis: 70%;
 }
 
-#about .about-col .info-col h2{
+#about .info-col h2{
     color: var(--themeColor);
     font-weight: 700;
     font-size: 35px;
@@ -310,7 +310,7 @@ main{
     margin-top: -10px;
 }
 
-#about .about-col .info-col p{
+#about .info-col p{
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.5px;
@@ -350,7 +350,7 @@ main{
         padding: 50px 10px;
     }
     #about .divider ~ p{
-        font-size: 1px;
+        font-size: 15px;
         letter-spacing: 0px;
         text-align: justify;
     }
@@ -383,6 +383,12 @@ main{
     #about .icon-list ul li span{
         font-weight: 400;
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #about .img-col img{
+        width: 90%;
     }
 }
 
