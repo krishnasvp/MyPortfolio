@@ -477,6 +477,13 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
+#skill .sub-para{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
 #skill .skill-info h2{
     color: var(--sideBGColor);
     font-weight: 600;
@@ -507,3 +514,16 @@ main{
 }
 /*===============================  Skills Section END  ===============================*/
 
+/*=====================  resume section start  ======================*/
+#resume{
+    padding: 70px 30px;
+    background-color: white;
+}
+#resume .sub-para{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+/*=====================  resume section end  ======================*/
