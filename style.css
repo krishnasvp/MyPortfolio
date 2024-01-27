@@ -11,11 +11,11 @@
 
 /* Global variables */
 :root{
-    --sideBGColor: #040b14;
-    --themeColor: #00A78E;
+    --sideBGColor: /*#040b14*/ #990011;
+    --themeColor: /*#00A78E #00539C*/ #990011;
     --iconBGColor: #2C2F3F;
     --textColor: #525252;
-    --bgColor:#F7F7F7;
+    --bgColor:/*#F7F7F7 #EEA47F*/ #FCF6F5;
 }
 
 /* Header Start */
@@ -23,7 +23,7 @@ header{
     height: 100vh;
     width: 300px;
     padding: 15px 30px;
-    background-color: var(--sideBGColor);
+    background-color: var(--themeColor);
     overflow-y: auto;
     position: fixed;
     left: 0;
@@ -525,5 +525,90 @@ main{
     letter-spacing: 0.4px;
     font-weight: 400;
     margin-top: 15px;
+}
+#resume .resume-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+}
+#resume .resume-col{
+    flex-basis: 50%;
+}
+#resume .resume-col h2{
+    color: var(--sideBGColor);
+    font-weight: 600;
+    font-size: 25px;
+    margin: 15px 0;
+}
+#resume .my-info{
+    padding: 0 20px 0 20px;
+    margin: 20px 0;
+    border-left: 2px solid var(--themeColor);
+    position: relative;
+}
+#resume .my-info::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--themeColor);
+    background-color: white;
+}
+#resume .resume-col h3{
+    color: var(--sideBGColor);
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#resume .my-info p{
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 10px 0;
+}
+#resume .my-info ul li{
+    margin: 10px 0;
+    margin-left: 20px;
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 500;
+}
+#resume .my-edu{
+    padding: 0 20px 0 20px;
+    border-left: 2px solid var(--themeColor);
+    position: relative;
+}
+#resume .my-edu::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--themeColor);
+    background-color: white;
+}
+#resume .sp-box{
+    padding: 4px 22px;
+    background-color: lightblue;
+    color: var(--textColor);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 15px 0;
+    display: inline-block;
+}
+#resume .my-edu span + p + p{
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
 /*=====================  resume section end  ======================*/
