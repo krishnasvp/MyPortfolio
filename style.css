@@ -119,7 +119,7 @@ header .footer{
 }
 
 header .footer p a{
-    color: var(--themeColor);
+    color: var(--bgColor);
 }
 
 /* Mobile Nav Toggle */
@@ -610,5 +610,34 @@ main{
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 15px;
+}
+#resume .pro-exp{
+    padding: 0 20px 0 20px;
+    border-left: 2px solid var(--themeColor);
+    position: relative;
+}
+#resume .pro-exp::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--themeColor);
+    background-color: white;
+}
+#resume .pro-exp p{
+    color: var(--textColor);
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
+}
+#resume .pro-exp ul li{
+    margin: 10px 0;
+    margin-left: 20px;
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 500;
 }
 /*=====================  resume section end  ======================*/
