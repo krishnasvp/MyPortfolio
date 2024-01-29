@@ -729,7 +729,22 @@ main{
 }
 #portfolio .port-info a:hover{
     background-color: var(--sideBGColor);
-    color: var(--bgColor);
+    color: var(--sideBGColor);
 }
-
+/*Mobile Veiw*/
+@media only screen and (max-width:650px){
+    #portfolio{
+        padding: 50px 10px;
+    }
+    #portfolio .port-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
+@media only screen and (max-width:350px){
+    #portfolio .port-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
 /*================== Portfolio Section Start ===================*/
