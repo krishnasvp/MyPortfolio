@@ -660,6 +660,13 @@ main{
 #portfolio{
     padding: 70px 30px;
 }
+#portfolio .sub-para{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
 #portfolio .port-row{
     margin: 50px;
     display: grid;
@@ -684,7 +691,20 @@ main{
     height: 100%;
     background-color: var(--themeColor);
     padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0;
+    border-radius: 10px;
+    visibility: hidden;
 }
-
+#portfolio .port-item:hover .port-info{
+    transform: scale(1);
+    visibility: visible;
+}
 
 /*================== Portfolio Section Start ===================*/
