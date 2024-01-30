@@ -747,4 +747,9 @@ main{
         grid-gap: 15px;
     }
 }
-/*================== Portfolio Section Start ===================*/
+/*================== Portfolio Section END ===================*/
+#services{
+    padding: 70px 30px;
+    background-color: white;
+}
+/*================== Services Section Start ==================*/
