@@ -182,7 +182,7 @@ main{
 #home{
     height: 100vh;
     width: 100%;
-    background-image: url(images/portfolio_background@4x-20.jpg);
+    background-image: url(images/portfolio-bg-resized.jpg);
     /*filter: blur(8px);*/
     background-size: cover;
     background-attachment: fixed;
@@ -751,5 +751,48 @@ main{
 #services{
     padding: 70px 30px;
     background-color: white;
+}
+#services .sub-para{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+#services .service-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+#services .service-box{
+    display: flex;
+    gap: 20px;
+}
+#services .service-box .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--themeColor);
+    font-size: 22px;
+    line-height: 46px;
+    background-color: var(--themeColor);
+    color: var(--bgColor);
+    transition: 0.7s;
+    text-align: center;
+}
+#services .service-box:hover .icon i{
+    color: var(--themeColor);
+    background-color: var(--bgColor);
+}
+#services .ser-info h4{
+    color: var(--sideBGColor);
+    font-size: 20px;
+    font-weight: 600;
+}
+#service .ser-info h4 + p{
+    color: var(--textColor);
+    font-size: 14px;
+    font-weight: 500;
 }
 /*================== Services Section Start ==================*/
