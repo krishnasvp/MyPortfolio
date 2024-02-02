@@ -884,10 +884,29 @@ main{
 }*/
 #contact .contact-right form input,
 #contact .contact-right form textarea{
+    display: block;
+    width: 100%;
+    margin: 25px 0;
     width: 100%;
     font-size: 15px;
     font-weight: 500;
     color: var(--textColor);
-
+    padding: 10px 20px;
+    border-radius: 2px;
+    outline: none;
+    resize: none;
+    transition: 0.5s;
+}
+#contact .contact-right form input:focus,
+#contact .contact-right form textarea:focus{
+    border: 2px solid var(--themeColor);
+}
+#contact .contact-right form input[type=submit]{
+    background-color: var(--themeColor);
+    color: var(--bgColor);
+    border: 2px solid var(--themeColor);
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
 }
 /*================= Contact Section END ====================*/
