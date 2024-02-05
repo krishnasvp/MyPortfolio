@@ -670,7 +670,7 @@ main{
 #portfolio .port-row{
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 35px;
 }
 #portfolio .port-item{
@@ -908,5 +908,20 @@ main{
     font-size: 17px;
     font-weight: 400;
     cursor: pointer;
+}
+/*Mobile View*/
+@media only screen and (max-width:800px){
+    #contact{
+        padding: 50px;
+    }
+    #contact .contact-row{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media only screen and (max-width:500px){
+    #contact{
+        padding: 50px 10px;
+    }
 }
 /*================= Contact Section END ====================*/
